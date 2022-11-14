@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h1>Page 1</h1>
+    <h3>Задача 1</h3>
+    <button onclick="alert('Привет!')">Нажми на меня!</button>
+    <p></p>
+    <h3>Задача 2</h3>
+    <button onclick="buttonClick()">Нажми на меня!</button>
+    <input type="text" id="input2" value="???">
+    <h3>Задача 3</h3>
+    <button onclick="buttonClick()">Нажми на меня!</button>
+    <input type="text" id="input3" value="???">
+    <h3>Задача 4</h3>
+    <button onclick="buttonClick()">Нажми на меня!</button>
+    <input type="text" id="input4" placeholder="Введите число!">
+    <h3>Задача 5</h3>
+    <button onclick="buttonClick()">Нажми на меня!</button>
+    <input type="text" id="input5" value="!!!"><input type="text" id="input5__2" value="???">  
+    <h3>Задача 6</h3>  
+    <input type="button" onclick="buttonClick(this)" value="Нажми на меня">
+    <h3>Задача 7</h3>
+    <button onclick="buttonClick()">Нажми на меня!</button>
+    <input type="text" id="input" value="Какой-то текст!">
+    <h3>Задача 8</h3>
+    <button onclick="button1Click()">Заблокировать</button>
+    <button onclick="button2Click()">Отблокировать</button>
+    <input type="text" id="input8" value="Какой-то текст!">
+    <h3><br><br>События через атрибуты</h3>
+    <h3>Задача 1</h3>
+    <button class="btn__1">Нажми на меня!</button>
+    <h3>Задача 2</h3>
+    <button onmouseover="alert('Привет!')">Нажми на меня!</button>
+    <h3>Задача 3</h3>
+    <button class="btn__3">Нажми на меня!</button>
+    <h3>Задача 4</h3>
+    <div class="red__border" onmouseout="alert('Привет!')">Наведи на меня мышь - а потом убери!</div>
+    <h3>Задача 5</h3>
+    <input type="text" id="input5" class="input5" value="Ку-ку">
+    <button class="btn__5">Нажми на меня!</button>
+    <h3>Задача 6</h3>
+    <input type="text" class="input6" value="Ку-ку">
+    <button class="btn__6">Нажми на меня!</button>
+    <h3>Задача 7</h3>
+    <div>
+        <img class="img__7__1" src="./assets/img/1.jpg" alt="">
+        <img class="img__7__2" src="./assets/img/2.jpg" alt="">
+    </div>
+    <button class="btn__7">Нажми на меня!</button>
+    <h3>Задача 8</h3>
+    <input type="text" class="input8" value="Нажми на меня!">
+    <h3>Задача 9</h3>
+    <input type="text" class="input9" value="Нажми на меня!">
+    <h3>Задача 10</h3>
+    <input type="text" class="input10" value="Нажми на меня!">
+    <h3>Задача 11</h3>
+    <input type="submit" class="input11" value="Нажми на меня!"></input>
+    <h3>Задача 12</h3>
+    <input type="submit" value="Нажми на меня!" class="input12">
+    <h3>Задача 13</h3>
+    <div class="monkey__block">
+        <img class="img__7__1__13" src="./assets/img/1.jpg" alt="">
+        <img class="img__7__2__13" src="./assets/img/2.jpg" alt="">
+    </div>
+    <h3>Задача 14</h3>
+    <input type="text" value="Ку-ку" class="input14">
+    <button class="btn__14">Нажми на меня!</button>
+    <h3>Задача 15</h3>
+    <input type="text" value="Ку-ку" class="input15">
+    <button class="btn__15__1">Нажми на меня!</button>
+    <button class="btn__15__2">Нажми потом на меня!</button>
+    <h3>Задача 16</h3>
+    <input type="text" class="input16" value="Ку-ку">
+    <button class="btn__16">Нажми на меня!</button>
+    <h3>Задача 17</h3>
+    <input type="submit" class="input17" value="Нажми на меня!">
+    <button class="btn__17">Нажми чтобы отблокировать элемент</button>
+    <h3>Задача 18</h3>
+    <p>Кнопка считает колличество нажатий на нее</p>
+    <input  value="0" type="submit" class="input18"></button>
+    <h3>Задача 19</h3>
+    <div class="i19">
+        <input type="text" class="input19" value="Ку-ку">
+        <button class="btn__19">Нажми на меня!</button>
+    </div>
+    <h3>Задача 20</h3>
+    <input type="text" class="input20" value="Ку-ку ">
+    <button class="btn__20">Нажми на меня!</button>
+    <h3>Задача 21</h3>
+    <input type="text" class="input21__1" value="Привет!">
+    <input type="text" class="input21__2" value="Пока!">
+    <button class="btn__21">Нажми на меня!</button>
+    <h3>Задача 22</h3>
+    <input type="text" placeholder="Введите число!" class="input22__1">
+    <input type="text" placeholder="Здесь появится результат!" class="input22__2" disabled="true">
+    <button class="btn__22">Нажми на меня!</button>
+    <h3>Задача 23</h3>
+    <div class="i23">
+        <input type="text" class="input23__1" placeholder="Введите число!">
+        <input type="text" class="input23__2" placeholder="Здесь появится результат."  disabled="true">
+        <button class="btn__23">Нажми на меня!</button>
+    </div>
+    <h3>Задача 24</h3>
+    <input type="submit" class="input24" value="Нажми на меня!"></input>
+    <h3>Задача 25</h3>
+    <div class="i25">
+        <input type="text" class="input25__main">
+        <div class="i25__1">
+            <input type="submit" class="input25__1__1" value="Я добавлю +">
+            <input type="submit" class="input25__1__2" value="Я добавлю -">
+            <input type="submit" class="input25__1__3" value="Я добавлю /">
+            <input type="submit" class="input25__1__4" value="Я добавлю *">
+        </div>
+        <div class="i25__1">
+            <input type="submit" class="input25__1" value="1">
+            <input type="submit" class="input25__2" value="2">
+            <input type="submit" class="input25__3" value="3">
+            <input type="submit" class="input25__4" value="4" >
+            <input type="submit" class="input25__5" value="5" >
+            <input type="submit" class="input25__6" value="6">
+            <input type="submit" class="input25__7" value="7">
+            <input type="submit" class="input25__8" value="8" >
+            <input type="submit" class="input25__9" value="9">
+            <input type="submit" class="input25__0" value="0">
+        </div>
+    </div>
+    <h1>Page 2</h1>
+    <h3>Задача 1</h3>
+    <div class="i2__1">
+        <button class="btn__2__1">Нажми на меня</button>
+        <p class="text__2__1">Это span с текстом</p>
+    </div>
+    <h3>Задача 2</h3>
+    <div class="i2__1">
+        <button class="btn__2__2">Нажми на меня</button>
+        <span class="text__2__2">Это span с текстом</span>
+    </div>
+    <h3>Задача 3</h3>
+    <div class="i2__3">
+        <p>Абзац, поменяется.</p>
+        <p>Абзац, поменяется.</p>
+        <p>Абзац, поменяется.</p>
+        <button class="btn__2__3">Нажми на меня</button>
+    </div>
+    <h3>Задача 4</h3>
+    <div class="i2__4">
+        <h2 class="zzz">Заголовок с классом zzz.</h2>
+        <p class="zzz">Абзац с классом zzz.</p>
+        <p class="zzz">Абзац с классом zzz.</p>
+        <p>Просто абзац, не поменяется.</p>
+        <button class="btn__2__4">Нажми на меня</button>
+    </div>
+    <h2>Свойства innerHTML, outerHTML</h2>
+    <h3>Задача 1</h3>
+    <div class="i2__1">
+        <p class="text__2__5">При нажатии на кнопку текст в абзаце поменяется</p>
+        <button class="btn__2__5">Нажми на меня!</button>
+    </div>
+    <h3>Задача 2</h3>
+    <p class="text__2__6">При нажатии на кнопку текст в абзаце поменяется</p>
+    <button class="btn__2__6">Нажми на меня!</button>
+    <h3>Задача 3</h3>
+    <p class="text__2__7">При нажатии на кнопку абзац станет h3, но текст останется</p>
+    <button class="btn__2__7">Нажми на меня!</button>
+    <h3>Задача 4</h3>
+    <div class="i2__1">
+        <input type="text" class="input__2__8__1">
+        <p>+</p>
+        <input type="text" class="input__2__8__2">
+        <p>=</p>
+        <p class="input__2__8__main">?</p>
+    </div>
+    <button class="btn__2__8">Нажмите чтобы сложить</button>
+    <h3>Задача 5</h3>
+    <div class="i2__9">
+        <p>При нажатии на кнопку текст в каждом абзаце поменяется.</p>
+        <p>При нажатии на кнопку текст в каждом абзаце поменяется.</p>
+        <p>При нажатии на кнопку текст в каждом абзаце поменяется.</p>
+        <p>При нажатии на кнопку текст в каждом абзаце поменяется.</p>
+        <h2><b>А я h2 и не поменяюсь!</b></h2>
+    </div>
+    <button class="btn__2__9">Нажми на меня!</button>
+    <h3>Задача 6</h3>
+    <div class="i2__10">
+        <h2 class="www">Заголовок с классом www.</h2>
+        <p class="www">Абзац с классом www.</p>
+        <p class="www">Абзац с классом www.</p>
+        <p>Просто абзац, не поменяется.</p>
+    </div>
+    <button class="btn__2__10">Нажми на меня!</button>
+    <h3>Задача 7</h3>
+    <div class="i2__11">
+        <h2 class="www">Заголовок с классом www, не поменяется.</h2>
+        <p class="www">Абзац с классом www.</p>
+        <p class="www">Абзац с классом www.</p>
+        <p class="www">Абзац с классом www.</p>
+        <p>Просто абзац, не поменяется.</p>
+    </div>
+    <button class="btn__2__11">Нажми на меня!</button>
+    <h3>Задача 8</h3>
+    <p class="my-class__1">Абзац с class="my-class".</p>
+    <button class="btn__2__12">Нажми - и я выведи класс абзаца</button>
+    <h3>Задача 9 и 10</h3>
+    <p id="text__2__13" class="my-class__2">Абзац с class="my-class". Класс задает красный цвет.</p>
+    <button class="btn__2__13__1">Нажми - и я выведу класс абзаца.</button>
+    <button class="btn__2__13__2">Нажми - и я удалю атрибут class для абзаца.</button>
+    <h3>Задача 11</h3>
+    <div class="i2__1">
+        <input type="text" class="input__2__15" value placeholder="Введите текст!">
+        <p class="text__2__15"></p>
+    </div>
+    <h3>Задача 12</h3>
+    <div class="i2__16">
+        <a href="http://google.com" id="a__16">Ссылка 1</a>
+        <a href="http://tut.by" id="a__16">Ссылка 2</a>
+        <a href="http://yandex.ru" id="a__16">Ссылка 2</a>
+        <button class="btn__2__16" >Нажмите на меня!</button>
+    </div>
+    <h3>Задача 13</h3>
+    <p class="text__2__17">При нажатии на кнопку текст в абзаце поменяется.</p>
+    <input type="submit" value="Нажмите на меня!" class="input__2__17"></input>
+    <h3>Задача 14</h3>
+    <div class="i2__18">
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <button class="btn__2__18">Нажмите на меня!</button>
+    </div>
+    <h3>Задача 15</h3>
+    <div class="i2__19">
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <p>Абзац с текстом.</p>
+        <button class="btn__2__19">Нажмите на меня!</button>
+    </div>
+    <h1>Page 3</h1>
+    <h3>Задача 1</h3>
+    <button class="btn__3__1">Нажми на меня!</button>
+    <h3>Задача 2</h3>
+    <button class="btn__3__2">Нажми на меня!</button>
+    <h2>Работа с new Date</h2>
+    <h3>Задача 1</h3>
+    <button class="btn__3__3">Нажми на меня!</button>
+    <h3>Задача 2</h3>
+    <h2>Задачи для решения</h2>
+    <h3>Задача 1</h3>
+    <p class="text__3__4"></p>
+    <h3>Задача 2</h3>
+    <p class="text__3__5"></p>
+    <h3>Задача 3</h3>
+    <p class="text__3__6"></p>
+    <h3>Задача 4</h3>
+    <p class="text__3__7"></p>
+    <h3>Задача 5</h3>
+    <p class="text__3__8"></p>
+    <h3>Задача 6</h3>
+    <p class="text__3__9"></p>
+    <h3>Задача 7</h3>
+    <p class="text__3__10"></p>
+    <h3>Задача 11</h3>
+    <p class="text__3__11"></p>
+    <h3>Задача 12</h3>
+    <input type="text" placeholder="Введите дату рождения!" class="input__3__12">
+    <p class="text__3__12"></p>
+    <h1>Page 4</h1>
+    <h3>Задача 1</h3>
+    <p class="text__4__1">0</p>
+    <button class="btn__4__1">Нажмите на меня!</button>
+    <h3>Задача 2</h3>
+    <p class="text__4__2">0</p>
+    <input type="submit" class="btn__4__2__1" value="Запустить таймер!"></input>
+    <input type="submit" class="btn__4__2__2" value="Остановить таймер!"  disabled="true"></input>
+    <h3>Задача 3</h3>
+    <h2 class="text__4__3"></h2>
+    <h3>Задача 4</h3>
+    <div class="i25__1">
+        <p class="text__4__4__1">10</p>
+        <p class="text__4__4__2">Обратный отсчет завершен.</p>
+        <input class="input__4__4" type="submit" value="Запустить таймер!">
+    </div>
+    <h3>Задача 5</h3>
+    <div class="slider">
+        <img class="img__4__5" src="./assets/img/1.png" alt="">
+    </div>
+    <h3>Задача 6</h3>
+    <div class="img__4__6">
+        <img src="./assets/img/1.png" alt="">
+        <img src="./assets/img/2.png" alt="">
+        <img src="./assets/img/3.png" alt="">
+    </div>
+    <input type="submit" value="Запустить карусель!" class="input__4__6">
+    <h3>Задача 7</h3>
+    <div class="img__4__7">
+        <img src="./assets/img/1.png" alt="">
+        <img src="./assets/img/2.png" alt="">
+        <img src="./assets/img/3.png" alt="">
+        <img src="./assets/img/4.png" alt="">
+        <img src="./assets/img/5.png" alt="">
+        <img src="./assets/img/6.png" alt="">
+    </div>
+    <input type="submit" value="Запустить карусель!" class="input__4__7__1">
+    <input type="submit" value="Остановить карусель!" class="input__4__7__2" disabled>
+    <h3>Задача 8</h3>
+    <table  class="table__4__8" cellspacing="0" cellpadding="0" >
+        <tr>
+            <th class="table__item">Часы</th>
+            <th class="table__item">Минуты</th>
+            <th class="table__item">Секунды</th>
+        </tr>
+        <tr class="table__items">
+            <td class="table__item h"></td>
+            <td class="table__item min"></td>
+            <td class="table__item sec"></td>
+        </tr>
+    </table>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
